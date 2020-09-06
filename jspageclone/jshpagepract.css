@@ -1,0 +1,234 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+#bodywrap{
+    text-align: center;
+    margin: 0px;
+}
+#headwrap{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#logo{
+    margin-left: 25px;
+    margin-bottom: 20px;
+    width: 30%;
+    float: left;
+}
+#smalllogo{
+    display: none;
+    float: left;
+}
+#logo img{
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+}
+nav{
+    text-align: center;
+    margin-top: 20px;
+    float: right;
+}
+ul{
+    margin: 20px;
+    padding: 0px;
+}
+ul li{
+    display: inline;
+    margin-right: 40px;
+    padding: 0px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+} /*end of general header*/
+.tryjs{
+    width: 50px;
+    background-color: #EC008E;
+    border-radius: 2px;
+    padding: 10px;
+}
+.tryjs:hover{
+    background: -webkit-linear-gradient(top left, orange, #EC008E);
+}
+.try{
+    display: none;
+}
+#adsection{
+    clear: both;
+    background-color: rgb(0 190 155);
+    padding: 20px;
+}
+#adsection div{
+    font-size: 50px;
+    text-align: center;
+}
+#blackspace{
+    margin-bottom: 40px;
+
+}
+code{
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    padding: 5px;
+}
+#introsec{
+    margin-top: 20px;
+    margin-bottom: 150px;
+    padding: 50px;
+}
+#introsec div{
+    margin: 20px auto;
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+#introsec div h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 65px;
+}
+#introsecwrap div{
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 0px;
+    text-align: center;
+    color: lightgrey;
+}
+#introsecwrap input{
+    height: 40px;
+    background: grey;
+    opacity: .5;
+    width: 100%;
+    border-style: none;
+}
+#introsec div p{
+    padding: 10px;
+    margin: 20px;
+    font-size: 27px;
+    line-height: 1.5;
+}
+#scope{
+    margin-bottom: 100px;
+    padding: 0px;
+    text-align: center;
+}
+#scopecover{
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+.scopebox{
+    text-align: center;
+    width: 28%;
+    float: left;
+    padding: 15px;
+    margin-bottom: 100px;
+}
+.scopebox h3{
+    color: lightgray;
+    font-size: 15px;
+}
+.scopebox p{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.scopebox span a{
+    color: white;
+    text-decoration: none;
+}
+#spacer{
+    color: white;
+    clear: both;
+    visibility: hidden;
+}
+footer{
+    margin-top: 100px;
+    padding: 20px;
+    clear: both;
+}
+#footerrights{
+    float: left;
+    margin-right: 100px;
+}
+#footerlogo{
+    float: left;
+}
+#footerlogo img{
+    height: 45px;
+}
+#smallfooterlogo{
+    float: left;
+    display: none;
+}
+footer span{
+    color: lightgray;
+    margin: 20px;
+}
+#footernav{
+    margin-left: 100px;
+    margin-right: 0px;
+    color: white;
+    float: right;
+}
+#footernav a{
+    margin-right: 40px;
+    color: white;
+    text-decoration: none;
+}
+@media(max-width:782px){
+    #logo, #headwrap nav li.tryjs {
+        display: none;
+    }
+    #smalllogo, .try{
+        display: inline;
+        margin-left: 15px;
+    }
+    #smalllogo img{
+        margin-right: 150px;
+        margin-bottom: 0px;
+        width: 60px;
+    }
+    nav{
+        margin-top: 0px;
+    }
+    ul li{
+        margin-right: 10px;
+    }
+    #adsection p{
+        display: block;
+    }
+    #scope{
+        text-align: center;
+    }
+    #scopecover{
+        text-align: center;
+    }
+    .scopebox{
+        float:none;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    #footerlogo img{
+        display: none;
+    }
+    #smallfooterlogo{
+        display: inline;
+    }
+    #smallfooterlogo img{
+        width: 60px;
+    }
+    footer span{
+        float: none;
+        color: lightgray;
+        margin: 40px 0 0 20px;
+    }
+
+}

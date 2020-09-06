@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel=stylesheet href="medschoolpract.css">
+        <script src="medschoolpract.js"></script>
+    </head>
+    <body>
+        <div id="bodywrap">
+                <div id="shrinkedmenu">
+                    <div id="shrinkedmenucancel" onclick="cancelshrinkedmenu()">X</div>
+                        <ul>
+                         <li class="shrinkedmenuitems"><a href="#">ABOUT<span>  +  +</span></a></li>
+                         <li class="shrinkedmenuitems"><a href="#">SERVICES<span>  +  +</span></a></li>
+                         <li class="shrinkedmenuitems"><a href="#">COURSES<span>  +  +</span></a></li>
+                         <li class="shrinkedmenuitems"><a href="#">BLOG<span>  +  +</span></a></li>
+                         <li class="shrinkedmenuitems"><a href="#">TOOLS<span>  +  +</span></a></li>
+                         <li class="shrinkedmenuitems"><a href="#">CONTACT<span>  + +</span></a></li>
+                         <li class="shrinkedmenuitems"><a href="#"><div id="account"></div>ACCOUNT</a></li>
+                        </ul>
+                </div>
+            <div id="backgroundimagewrapper">
+                <header>
+                    <div id="logowrapper">
+                        <img src="cropped-MSI-Logo-Website-Banner-2020.png"/>
+                    </div>
+                    <a href=#><div id="menushrinked" onclick="showmenushrinked()"></div></a> <!--small menu-->
+                    <nav>
+                        <ul id="menu">
+                        <li class="mainmenu" id="mainmenu_about" onmouseover="dropaboutsubmenu();" onmouseout="leaveaboutsubmenu();"><a href=#><span class="main_menu_span">ABOUT</span></a> <!--about (3)-->
+                        <ul class="submenu" id="submenu_about">
+                            <li><a href=#><span>Our Method</span></a></li>
+                            <li><a href=#><span>Our Team</span></a></li>
+                            <li><a href=#><span>Our Success Rate</span></a></li>
+                        </ul></li>
+                        <li class="mainmenu" id="mainmenu_services" onmouseover="dropservicessubmenu();" onmouseout="leaveservicessubmenu();"><a href=#><span class="main_menu_span">SERVICES</span></a> <!-- services (4)-->
+                        <ul class="submenu" id="submenu_services">
+                            <li id="medicalschooladmissions" onmouseover="dropmedicalschooladmissionsmenu();" onmouseout="leavemedicalschooladmissionsmenu();"><a href=#><span>Medical School Admissions</span></a> <!-- services: med school admissions(8)-->
+                            <ul class="submenu" id="submenu_services_medicalschooladmissions">
+                                <li><a href=#><span>Comprehensive Packages</span></a></li>
+                                <li id="applicationediting"><a href=#><span>Application Editing</span></a> <!-- services: med school admissions: application editing(3)-->
+                                <ul class="submenu" id="submenu_services_medicalschooladmissions_applilcationediting">
+                                    <li><a href=#><span>AMCAS Application Editing</span></a></li>
+                                    <li><a href=#><span>AAACOMAS Application Editing</span></a></li>
+                                    <li><a href=#><span>TMDSAS Application Editing</span></a></li>
+                                </ul></li>
+                                <li><a href=#><span>Individual Advising</span></a></li>
+                                <li><a href=#><span>Interview Preparation</span></a></li>
+                                <li><a href=#><span>Personal Statement Editing</span></a></li>
+                                <li><a href=#><span>Secondary Application Editing</span></a></li>
+                                <li><a href=#><span>Reapplicants</span></a></li>
+                                <li><a href=#><span>MD/phD Essay Editing</span></a></li>
+                            </ul></li>
+                            <li id="residencymatching" onmouseover="dropresidencymatchingsubmenu();" onmouseout="leaveresidencymatchingsubmenu();"><a href=#><span>Residency Matching</span></a> <!-- services: residency matching(5)-->
+                            <ul class="submenu" id="submenu_services_residencymatching">
+                                <li><a href=#><span>Comprehensive Packages</span></a></li>
+                                <li><a href=#><span>Application Editing</span></a></li>
+                                <li><a href=#><span>Individual Advising</span></a></li>
+                                <li><a href=#><span>Interview Preparation</span></a></li>
+                                <li><a href=#><span>Personal Statement Editing</span></a></li>
+                            </ul></li>
+                            <li id="tutoring" onmouseover="droptutoringsubmenu();" onmouseout="leavetutoringsubmenu();"><a href=#><span>Tutoring</span></a> <!-- services: tutoring(5)-->
+                            <ul class="submenu" id="submenu_services_tutoring">
+                                <li><a href=#><span>MCAT Tutoring</span></a></li>
+                                <li id="usmletutoring"><a href=#><span>USMLE Tutoring</span></a> <!-- services: tutoring: USMLE tutoring(3)-->
+                                <ul class="submenu" id="submenu_services_tutoring_usmletutoring">
+                                    <li><a href=#><span>USMLE Step 1 Tutoring</span></a></li>
+                                    <li><a href=#><span>USMLE Step 2CK Tutoring</span></a></li>
+                                    <li><a href=#><span>USMLE Step 3 Tutoring</span></a></li>
+                                </ul></li>
+                                <li><a href=#><span>Medical School Subject Tutoring</span></a></li>
+                                <li><a href=#><span>Shelf Exam Tutoring</span></a></li>
+                                <li><a href=#><span>Premed College Subject Tutoring</span></a></li>
+                            </ul></li>
+                            <li id="otherservices" onmouseover="dropotherservicessubmenu();" onmouseout="leaveotherservicessubmenu();"><a href=#><span>Other Services</span></a><!-- services: other services(3)-->
+                            <ul class="submenu" id="submenu_services_otherservices">
+                                <li><a href=#><span>CV/Resume Editing</span></a></li> 
+                                <li><a href=#><span>Letter Of Intent/Interest Editing</span></a></li>
+                                <li><a href=#><span>Personal Statement Brainstorming & Planning</span></a></li>
+                            </ul></li>
+                        </ul>
+                        </li>
+                        <li class="mainmenu" id="mainmenu_courses" onmouseover="dropcoursessubmenu();" onmouseout="leavecoursessubmenu();"><a href=#><span class="main_menu_span">COURSES</span></a> <!--courses(2)-->
+                        <ul class="submenu" id="submenu_courses">
+                            <li><a href=#><span>Premed Roadmap</span></a></li>
+                            <li><a href=#><span>Medical School Interview</span></a></li>
+                        </ul></li>
+                        <li class="mainmenu" id="mainmenu_blog" onmouseover="dropblogsubmenu();" onmouseout="leaveblogsubmenu();"><a href=#><span class="main_menu_span">BLOG</span></a> <!-- blog(4)-->
+                        <ul class="submenu" id="submenu_blog">
+                            <li><a href=#><span>Premed</span></a></li>
+                            <li><a href=#><span>Medical student</span></a></li>
+                            <li><a href=#><span>Lifestyle</span></a></li>
+                            <li><a href=#><span>Study Strategies</span></a></li>
+                        </ul></li>
+                        <li class="mainmenu" id="mainmenu_tools" onmouseover="droptoolssubmenu();" onmouseout="leavetoolssubmenu();"><a href=#><span class="main_menu_span">TOOLS</span></a> <!-- tools((5))-->
+                        <ul class="submenu" id="submenu_tools">
+                            <li><a href=#><span>MCAT Score Converter</span></a></li>
+                            <li><a href=#><span>Secondary Database</span></a></li>
+                            <li><a href=#><span>Premed & Medical Student Annual Scholarship</span></a></li>
+                            <li><a href=#><span>Personal Statement Database</span></a></li>
+                            <li><a href=#><span>Essential Books For Students</span></a></li>
+                        </ul></li>
+                        <li class="mainmenu" id="mainmenu_contact" onmouseover="dropcontactsubmenu();" onmouseout="leavecontactsubmenu();"><a href=#><span class="main_menu_span">CONTACT</span></a> <!-- -contact(2)-->
+                        <ul class="submenu" id="submenu_contact">
+                            <li><a href=#><span>Free Consultation</span></a></li>
+                            <li><a href=#><span>Apply</span></a></li>
+                        </ul></li>
+                        <li class="mainmenu" id="mainmenu_icon1"><a href=#><span class="main_menu_span">i</span></a></li>
+                        <li class="mainmenu" id="mainmenu_icon2"><a href=#><span class="main_menu_span">i</span></a></li>
+                        </ul>
+
+                    </nav>
+                </header>
+                <section id="showcaseintro">
+                    <div id="showcasewrapper">
+                        <h1>Your Medical School Dream Starts Now</h1>
+                        <h2>Trusted By Over 870,000 And Counting</h2>
+                        <div id="getstartedbuttoncover">
+                        <a href=#>GET STARTED</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+                <section id="main" class="bodysection">
+                    <div id="mainwrapper">
+                        <h1>MEDICAL SCHOOL ADMISSIONS & TUTORING</h1>
+                        <p>Becoming a doctor is difficult, but getting <strong>accepted to medical school</strong> doesn’t have to be. Med School Insiders will provide the tools and services to help you succeed. Our team empowers pre-med and medical students to realize their <strong>maximum potential</strong> – from <strong>medical school and residency admissions</strong> advisement to <strong>MCAT and USMLE tutoring</strong>, and much more.</p>
+                    </div>
+                </section>
+                <section id="medschoolinsidersadvantage" class="bodysection">
+                    <div id="insidersadvantagecover">
+                        <h1>THE MED SCHOOL INSIDERS ADVANTAGE</h1>
+                        <div id="advantageboxeswrap">
+                        <div id="advantagebox1" class="advantageboxes">
+                            <img src="031-stethoscope-100x100.png">
+                            <h3>Top Doctors</h3>
+                            <p>No general advisors or counselors here. Our team is made entirely of top doctors. We've excelled and will teach you how to do the same.</p>
+                        </div>
+                        <div id="advantagebox2" class="advantageboxes">
+                            <img src="167-accept-100x100.png">
+                            <h3>Serious Results</h3>
+                            <p>Above all else, we prioritize results, and that's why students love us. Our novel and proprietary systems ensure we only win when you win.</p>
+                        </div>
+                        <div id="advantagebox3" class="advantageboxes">
+                            <img src="184-levels-100x100.png">
+                            <h3>Tailored to You</h3>
+                            <p>We don't believe in cookie cutter approaches. Each applicant receives customized and 1-on-1 attention from the country's best advisors and tutors.</p>
+                        </div>
+                        </div>
+                        
+                        <P><strong>We innovated and transformed tutoring and advisement</strong> for medical school and residency admissions. Want to know the secret to our <strong>industry-leading satisfaction rate</strong>?</P>
+                        <div id="section_boxes_hover_blue">
+                            <a href=#>
+                                <div class="section_boxes_hover_blue">OUR METHOD</div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section id="resultsthatspeakforthemselves">
+                    <div id="resultsectionwrapper">
+                        <h1>RESULTS THAT SPEAK FOR THEMSELVES</h1>
+                        <div class="resultboxes">
+                            <h1>>
+                                99
+                                %</h1>
+                            <p>Satisfaction Rate</p>
+                        </div>
+                        <div class="resultboxes">
+                            <h1>>
+                                110
+                                </h1>
+                            <p>Extraordinary Advisors</p>
+                        </div>
+                        <div class="resultboxes">
+                            <h1>>
+                                1,850
+                                </h1>
+                                <p>Successful Students</p>
+                        </div>
+                        <div class="resultboxes">
+                            <h1>>
+                                870
+                                K</h1>
+                            <p>That Love Our Work</p>
+                        </div>
+                        <div id="slideshowdiv">
+                            <div id="slideshowdivcover" >
+                                <span id="firstslidespan" class="slidespan">
+                                    <div id="firstslideshowlayer" class="slidespandiv">
+                                        <span>From crafting my personal statement and essays to preparing for my interview, I received invaluable feedback. Specifically, they worked one-on-one with me to help me find my story and theme for my application. Moreover, during my mock interview with Dr. Bari, I was provided with advice on how to better present my personal anecdotes and answer tough questions. When it came time to the real interview, my delivery was significantly better. In fact, many of the tough questions that Dr. Bari asked me were asked during my actual interview! After a long application cycle, I was accepted to multiple US MD schools including my dream medical that I NEVER thought in a million years I would be accepted at. This is a dream come true and I want to strongly encourage anyone who is considering the services that Med School Insiders offers to take advantage of it! Dr. Jubbal, Dr. Bari, and the rest of the team at Med School Insiders are amazing people who truly care about their students and want them to succeed. I am forever grateful for their guidance throughout this process.</span>
+                                    </div>
+                                    <div id="slideshowauthordetails">    
+                                        <cite><span>P.C.</span>
+                                        <p>Matriculant to Dream Medical School</p></cite>
+                                    </div>
+                                    <div id="firstslidearrow"></div>
+                                </span>
+                                <span id="secondslidespan" class="slidespan">
+                                    <div id="secondslideshowlayer" class="slidespandiv">
+                                        <span>Since my advisor was a voting member of the medical school admissions committee, he knows exactly what discussions go on behind the doors. Having him as my mentor throughout my application process was like having the list of questions in advance before a major exam. He knew exactly what I should be focusing on and helped me plan each year to get the most out of college. I am so thankful to have gotten accepted to my dream medical school and I know I couldn’t have gotten here without him!</span>
+                                    </div>
+                                    <div id="slideshowauthordetails">
+                                        <cite><span>S.C.</span>
+                                        <p>Harvard Undergraduate Student</p></cite>
+                                    </div>
+                                    <div id="secondslidearrow"></div>
+                                </span>
+                                <span id="thirdslidespan" class="slidespan">
+                                    <div id="thirdslideshowlayer" class="slidespandiv">
+                                        <span>From Dr. Jubbal’s prompt communication to Dr. Williamson’s attention to detail and in-depth editing notes, I could not be more pleased working with Med School Insiders Personal Statement Editing Service. Within a 24-hour period, my personal statement went from a somewhat interesting story to a persuasive and compelling narrative that is true to my personal path toward medicine. By precisely tuning my language, restructuring key sentences, and working on overall flow, Dr. Williamson helped me turn my own writing into the best version of itself. I would urge any students seeking admission into medical school to make this small investment and work with Med School Insiders to maximize their potential for acceptance.</span>
+                                    </div>
+                                    <div id="slideshowauthordetails">
+                                        <cite><span>H.O.</span>
+                                        <p>Non-Traditional Student</p></cite>
+                                    </div>
+                                    <div id="thirdslidearrow"></div>
+                                </span>
+                                <span id="fourthslidespan" class="slidespan">
+                                    <div id="fourthslideshowlayer" class="slidespandiv">
+                                        <span>I remember when I first discovered the Med School Insiders (MSI) YouTube channel. For a long time, I had wished that someone from the medical field would compile their knowledge and give back to the pre-medical niche. MSI continues to do exactly that, and more recently Dr. Jubbal has made even more progress through MSI Services. I personally purchased the personal statement 3-edit package, and I could not be happier with the results. My rough draft went from 50% done to 90% polished in just one edit, which alone saved me weeks of work. The following 2 edits resulted in a completed statement that stayed true to my voice but gave it professionalism and conciseness. Their expertise was evident through the entire process. If I ever need advice or med school services I wouldn't think twice about what service to use - MSI.</span>
+                                    </div>
+                                    <div id="slideshowauthordetails">
+                                        <cite><span>J.F.</span>
+                                        <p>University of Florida Undergraduate Student</p></cite>
+                                    </div>
+                                    <div id="fourthslidearrow"></div>
+                                </span>
+                            </div>
+                            <div id="slidecounter">
+                                <div id="slidecounterindicator">
+                                    <div class="slidecounterbullets"></div>
+                                    <div class="slidecounterbullets"></div>
+                                    <div class="slidecounterbullets"></div>
+                                    <div class="slidecounterbullets"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ratingdiv">
+                            <div id="excellent" class="ratingbox">
+                                <h2>EXCELLENT</h2>
+                                <P>B B B B B</P>
+                                trustspot api
+                            </div>
+                            <div id="ricardov" class="ratingbox">
+                                b b b b b
+                                <h3>Ricardo V</h3>
+                                <p>Kareem was extremely thorough in his edits of my personal statement! I would hig... <a href=#>Read More</a></p>
+                            </div>
+                            <div id="marroquinr" class="ratingbox">
+                                b b b b b
+                                <h3>Marroquin R</h3>
+                                <p>This program is really useful! I received a lot of insight on my essay that I re... <a href=#>Read More</a></p>
+                            </div>
+                        </div>
+                        <div id="section_boxes_hover_blue">
+                            <a href=#>
+                                <div class="section_boxes_hover_blue">OUR RESULTS</div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section id="ourservicessection">
+                    <div id="servicesectionwrap">
+                        <h1>OUR SERVICES</h1>
+                        <div id="servicedivcontainer">
+                        <div id="servicedivcover">
+                            <div id="floatleftdiv" class="servicediv">
+                                <div id="personalatatement" class="leftdivcontents">
+                                 <img src="147-school-material-150x150.png">
+                                 <h2>Personal Statement Editing</h2>
+                                 <p>The personal statement is often the deciding factor in getting an interview. Our doctors with admissions committee experience will help you craft an essay that open doors.</p>
+                                <div class="learnmorelinkcover"><a href=#><div class="learnmorebluelink">LEARN MORE</div></a></div>
+                                </div>
+
+                                 <div id="individualadvising" class="leftdivcontents">
+                                 <img src="171-hierarchical-structure-150x150.png">
+                                 <h2>Individual Advising</h2>
+                                 <p>From course and extracurricular planning to gap year optimization and much more, our expert doctors will guide you. We'll build your customized plan from the ground up.</p>
+                                  <div class="learnmorelinkcover"><a href=#><div class="learnmorebluelink">LEARN MORE</div></a></div>
+                                 </div>
+
+                                <div id="interviewprep" class="leftdivcontents">
+                                 <img src="103-chat-1-150x150.png">
+                                 <h2>Interview Preparation</h2>
+                                 <p>First impressions count. We'll give you the upper hand by preparing you – from handshake to thank you card.</p>
+                                 <div class="learnmorelinkcover"><a href=#><div class="learnmorebluelink">LEARN MORE</div></a></div>
+                                </div>
+
+                                <div id="reapplicants" class="leftdivcontents">
+                                 <img src="080-refresh-150x150.png">
+                                 <h2>Reapplicants</h2>
+                                 <p>Rejected from medical school? Our advisors will maximize your chance of acceptance the second time around.</p>
+                                 <div class="learnmorelinkcover"><a href=#><div class="learnmorebluelink">LEARN MORE</div></a></div>
+                                </div>
+                            </div>
+                            <div id="floatrightdiv" class="servicediv">
+                                <div id="secondaryessayediting" class="rightdivcontents">
+                                <img src="145-pen-150x150.png">
+                                <h2>Secondary Essay Editing</h2>
+                                <p>The medical school secondary application is your opportunity to show schools why you're interested. Some deans say they are more important than the personal statement!</p>
+                                <div class="learnmorelinkcover"><a href=#><div class="learnmorebluelink">LEARN MORE</div></a></div>
+                                </div>
+
+                                <div id="tutoring" class="rightdivcontents">
+                                <img src="136-school-1-150x150.png">
+                                <h2>Tutoring</h2>
+                                <p>There is no substitute for top scores. From college subject to medical school tutoring and from MCAT to USMLE Step 1, Step 2CK, or COMLEX, we've got you covered.</p>
+                                <div class="learnmorelinkcover"><a href=#><div class="learnmorebluelink">LEARN MORE</div></a></div>
+                                </div>
+
+                                <div id="applicationreview" class="rightdivcontents">
+                                <img src="097-file-1-150x150.png">
+                                <h2>Application Review</h2>
+                                <p>The AMCAS, AACOMAS, TMDSAS, and ERAS applications are the first thing adcoms see. We'll highlight what makes you stand out.</p>
+                                <div class="learnmorelinkcover"><a href=#><div class="learnmorebluelink">LEARN MORE</div></a></div>
+                                </div>
+
+                                <div id="servicepackages" class="rightdivcontents">
+                                <img src="179-startup-150x150.png">
+                                <h2>Service Packages</h2>
+                                <p>Our comprehensive packages offer you the highest chance at success. From start to finish, we'll guide you to make your dream a reality.</p>
+                                <div class="learnmorelinkcover"><a href=#><div class="learnmorebluelink">LEARN MORE</div></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="meettheteamsection">
+                    <div id="meettheteamcover">
+                        <div id="meettheteamheadercover">
+                            <h1>MEET THE TEAM</h1>
+                        </div>
+                        <div id="teamdivcontainer1">
+                        <div class="teamdivs">
+                            <img src="KevinJubbal_MD-e1522364145481.jpg">
+                                <h3>Kevin Jubbal, M.D.</h3>
+                                <p>UCLA | Neuroscience B.S.</p>
+                                <p>UC San Diego | M.D.</p>
+                                <p>Loma Linda | Plastic Surgery</p>
+                        </div>
+                        <div class="teamdivs">
+                            <img src="PeggySuMD.jpg">
+                                <h3>Peggy Su, M.D.</h3>
+                                <p>Harvard | Human Developmental & Regenerative Biology, B.A.</p>
+                                <p>Johns Hopkins | M.D.</p>
+                                <p>USC | Otolaryngology</p>
+                        </div>
+                        <div class="teamdivs" id="teamdiv3">
+                            <img src="RichardLi_MD-e1522364129549.jpg">
+                                <h3>Richard Li, M.D.</h3>
+                                <p>Harvard | Economics B.A.</p>
+                                <p>Harvard | M.D.</p>
+                                <p>City of Hope | Radiation Oncology</p>
+                        </div>
+                        <div class="teamdivs" id="teamdiv4">
+                            <img src="ChristinaLinMD-2-300x300.jpg">
+                                <h3>Christina Lin, M.D.</h3>
+                                <p>UC Berkeley | Nutritional Science B.S., Education Minor</p>
+                                <p>UC San Diego | M.D.</p>
+                                <p>UCLA | Internal Medicine</p>
+                        </div>
+                        </div>
+                        <div id="teamdivcontainer2">
+                            <div class="teamdivs">
+                                <img src="NanDu_MD.jpg">
+                                <h3>Nan Du, M.D.</h3>
+                                    <p>Harvard | Biomedical Engineering B.S.</p>
+                                    <p>Brown | M.D.</p>
+                                    <p>Yale | Pediatrics</p>
+                                </div>
+                            <div class="teamdivs">
+                                <img src="AmitPandey_MD-e1522364204353.jpg">
+                                    <h3>Amit Pandey, M.D.</h3>
+                                    <p>UCLA | Biology B.S.</p>
+                                    <p>UC San Diego | M.D.</p> 
+                                    <p>UC San Diego | Internal Medicine</p>
+                            </div>
+                            <div class="teamdivs" id="teamdiv3">
+                                <img src="AliciaLu_MD.jpg">
+                                    <h3>Alicia Lu, M.D.</h3>
+                                    <p>USC | Neuroscience B.A., Sociology, B.A.</p>
+                                    <p>Brown | M.D.</p>
+                                    <p>Mount Sinai | Emergency Medicine</p>
+                            </div>
+                            <div class="teamdivs" id="teamdiv4">
+                                <img src="BayardWilson_MD-e1522364202213.jpg">
+                                    <h3>Bayard Wilson, M.D.</h3>
+                                    <p>University of Pennsylvania | Biology B.A.</p>
+                                    <p>UC San Diego | M.D., M.A.S.</p>
+                                    <p>UCLA | Neurosurgery</p>
+                            </div>
+                        </div>
+                        <div id="scrolllogobarcontainer">
+                            <div id="scrolllogobar">
+                                <div class="scrolllogodiv">
+                                <img src="logo_UCSF-300x106.png">
+                                <img src="logo_Harvard-300x106.png">
+                                <img src="logo_NYU-1-300x106.png">
+                                <img src="logo_Perelman-300x106.png">
+                                <img src="logo_Michigan-1-300x106.png">
+                                </div>
+                                <div class="scrolllogodiv">
+                                <img src="logo_Duke-300x106.png">
+                                <img src="logo_Cornell-300x106.png">
+                                <img src="logo_MtSinai-1-300x106.png">
+                                <img src="logo_Washington-300x106.png">
+                                <img src="logo_Yale-300x106.png">
+                                </div>
+                            </div>
+                            </div>
+                            <div id="scrolllogobarscroll">
+                                <div class="logoscroller"></div>
+                                <div class="logoscroller"></div>
+                            </div>
+
+                        <div id="section_boxes_hover_blue">
+                            <a href=#>
+                                <div class="section_boxes_hover_blue">MEET THE REST</div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section id="ourblogsection">
+                    <div id="ourblogsectioncover">
+                        <h1>OUR BLOG</h1>
+                        <div id="ourblogdivcontainer">
+                            <div class="ourblogdivs">
+                                <img src="sebastian-herrmann-NbtIDoFKGO8-unsplash-1-300x200.jpg">
+                                <h2>The Final Challenge: Residency Interview Season</h2>
+                                <p>Congratulations! You’ve made it through two years of basic science studying, Step 1, and your third-year clerkships. Now comes the best year. Yes, fourth-year has</p> <a href=#>READ MORE »</a>
+                            </div>
+                            <div class="ourblogdivs">
+                                <img src="jose-morales-3k_FcShH0jY-unsplash-300x200.jpg">
+                                <h2>Curve Ball! The Day I Didn’t Match</h2>
+                                <p>The NRMP algorithm is designed to optimize the choices of both incoming residents and residency programs. But what happens when the algorithm fails you?</p> <a href=#>READ MORE »</a>
+                            </div>
+                            <div class="ourblogdivs">
+                                <img src="ambulance-architecture-building-business-263402-300x199.jpg">
+                                <h2>So You Want to Be an Emergency Medicine Doctor</h2>
+                                <p>If you like the idea of high pressure, adrenaline, and saving people’s lives, emergency medicine may be the perfect fit for you. In this post, we debunk some public perception myths of emergency medicine and give it to you straight.</p> <a href=#>READ MORE »</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="lastsection">
+                    <div id = "lastsectionlayer">
+                        <div id="lastsectionwrap">
+                            <h1>YOU'VE ALWAYS WANTED TO BE A DOCTOR</h1>
+                            <h2>It's time to make it happen</h2>
+                            <div id="getstartedbuttoncover">
+                                    <a href=#>GET STARTED</a>
+                                    </div>
+                        </div>
+                        <footer>
+                                <div id="footernav">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Terms & conditions</a></li>
+                                        <li><a href="#">Affiliate program</a></li>
+                                    </ul>
+                                </div>
+                                <div id="footercopyright">
+                                    © 2018 Med School Insiders. All Rights Reserved
+                                </div>
+                                <div id="contacticons">
+                                    <div class="icons"></div>
+                                    <div class="icons"></div>
+                                    <div class="icons"></div>
+                                    <div class="icons"></div>
+                                </div>
+                            </footer>
+                    </div>
+                </section>
+
+                <script type="text/javascript">
+                    window.addEventListener("scroll", function(){
+                        var enterleft = document.getElementById('floatleftdiv');
+                        var enterright = document.getElementById('floatrightdiv');
+                        var floatup1 = document.getElementById('teamdivcontainer1');
+                        var floatup2 = document.getElementById('teamdivcontainer2');
+                        var floatup0 = document.getElementById('meettheteamheadercover');
+                        var floatup3 = document.getElementById('ourblogsectioncover');
+                        var pageposition = window.scrollY;
+
+        
+                        if(pageposition > 3500){
+                            enterleft.style = "animation-name: floatleftscroll; animation-duration: 2s; ";
+                            enterright.style = "animation-name: floatrightscroll; animation-duration: 2s;";
+                        }
+                        if(pageposition > 5600){
+                            floatup1.style = "animation-name: firstteamdivup; animation-duration: 2s";
+                        }
+                        if(pageposition > 5500){
+                            floatup0.style = "animation-name: firstteamdivup; animation-duration: 2s";
+                        }
+                        if(pageposition > 6000){
+                            floatup2.style = "animation-name: firstteamdivup; animation-duration: 2s;";
+                        }
+                        if(pageposition > 7200){
+                            floatup3.style = "animation-name: firstteamdivup; animation-duration: 2s"
+                        }
+                   })
+                </script>
+        </div>
+    </body>
+</html>

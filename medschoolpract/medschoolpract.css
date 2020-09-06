@@ -1,0 +1,773 @@
+body{
+    width: auto;
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+#bodywrap{
+    width: auto;
+    margin: auto;
+    overflow: hidden;
+}
+#backgroundimagewrapper{
+    background: url("460230.png") no-repeat;
+    min-height: 500px;
+}
+header{
+    background-color: black;
+    padding: 0px 0px 0px 20px;
+    min-height: 70px;
+    background: rgba(0,0,0, 0.9);
+}
+header #logowrapper{
+    float: left;
+    width: 20%;
+}
+header img{
+    width: 100%;
+}
+#shrinkedmenu{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: -500px;
+    width: 0;
+    height: 0;
+    display: none;
+}
+nav{
+    margin:0 35px 0 0;
+    height: 100%;
+    padding:0;
+    float: right;
+}
+nav ul{
+    padding: 0;
+    height: 45px;
+    margin: 30px 0 0 0;
+}
+nav ul li{
+    float: left;
+    height: 100%;
+    list-style-type: none;
+    margin:0;
+}
+nav a{
+    text-decoration: none;
+    text-align: center;
+    padding: 0 14px;
+}
+nav li:hover .main_menu_span{
+    color: blue;
+}
+nav span{
+    color: white;
+    height: 70px;
+}
+.submenu{
+    font-size: 14px;
+    border-top: 2px solid blue;
+    width: 210px;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    display: none;
+}
+.submenu li{
+    width: 200px;
+    border-bottom: 1px solid white;
+    padding: 10px 5px 10px 5px;
+    background-color: grey;
+    display: block;
+}
+.submenu span{
+    color: white;
+}
+.submenu li:hover{
+    background-color: white;
+}
+.submenu li:hover span{
+    color: black;
+}
+/*showcase*/
+#showcaseintro{
+    background-color: black;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    min-height: 420px;
+}
+#showcasewrapper{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 150px 100px 100px 100px;
+}
+#showcaseintro h1{
+    margin:0;
+    padding:0;
+}
+#showcaseintro h1{
+    color: blue;
+    font-size: 70px;
+}
+#showcaseintro h2{
+    color: white;
+    font-size: 40px;
+}
+#getstartedbuttoncover{
+    border: 1px solid red;
+    background-color: rgba(180, 0, 0, 0.7);
+    padding: 15px;
+    width: 200px;
+    margin: auto;
+    border-radius: 5px;
+}
+#getstartedbuttoncover a{
+    color: white;
+    text-decoration: none;
+}
+#getstartedbuttoncover:hover{
+    border: 1px solid white;
+    background-color: black;
+    background-color: rgba(0,0,0,0.7)
+}
+/*main section*/
+.bodysection h1{
+    font-size: 45px;
+}
+#main{
+    text-align: center;
+}
+#mainwrapper{
+    padding: 100px 100px 100px 100px;
+}
+#main p{
+    font-size: 25px;
+    line-height: 2;
+}
+/* another section */
+#medschoolinsidersadvantage{
+    text-align: center;
+    border-top: 1px dotted black;
+}
+#insidersadvantagecover{
+    padding: 100px;
+}
+#advantageboxeswrap{
+    display: flex;
+}
+.advantageboxes{
+    width: 29%;
+    margin: 70px 15px 50px 15px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.6;
+}
+.advantageboxes h3{
+    color: blue;
+    margin-bottom: 5px;
+}
+.advantageboxes p{
+    margin-top: 20px;
+}
+#medschoolinsidersadvantage p{
+    font-size: 25px;
+}
+#section_boxes_hover_blue{
+    width: 180px;
+    margin: auto;
+}
+#section_boxes_hover_blue a{
+    text-decoration: none;
+    color: black;
+}
+.section_boxes_hover_blue{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 180px;
+    margin: 70px auto;
+    padding: 15px;
+    clear: both;
+}
+#section_boxes_hover_blue:hover a{
+    text-decoration: none;
+    color: blue;
+}
+.section_boxes_hover_blue:hover{
+    border: 2px solid blue;
+}
+#resultsthatspeakforthemselves{
+    border-top: 1px dotted black;
+}
+#resultsthatspeakforthemselves h1{
+    font-size: 45px;
+}
+#resultsectionwrapper{
+    padding: 100px;
+    text-align: center;
+}
+.resultboxes{
+    float: left;
+    width: 22%;
+    margin: 15px;
+}
+.resultboxes h1{
+    font-size: 45px;
+    color: blue;
+}
+.resultboxes p{
+    font-size: 25px;
+}
+#slideshowdiv{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    overflow: hidden;
+}
+#slideshowdivcover{
+    width: 400%;
+    height: auto;
+    display: flex;
+    animation-name: slideshowmove;
+    animation-duration: 40s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(5, 5, 5, 5);
+}
+@keyframes slideshowmove{
+    0%{transform: translate(0px, 0px);}
+    29%{transform: translate(0px, 0px);}
+    30%{transform: translate(-25%, 0px);}
+    49%{transform: translate(-25%, 0px);}
+    50%{transform: translate(-50%, 0px);}
+    79%{transform: translate(-50%, 0px);}
+    80%{transform: translate(-75%, 0px);}
+    100%{transform: translate(-75%, 0px);}
+}
+#slideshowauthordetails{
+    margin-top: 20px;
+}
+.slidespan{
+    height: auto;
+    width: 100%;
+    margin: 10px 20px 10px 30px;
+    float: left; 
+}
+.slidespandiv{
+    background-color: gainsboro;
+    line-height: 1.5;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#firstslidearrow{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 20px solid gainsboro;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid transparent;
+    top: -14.95vh;
+    left: 47%;
+}
+#secondslidearrow{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 20px solid gainsboro;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid transparent;
+    top: -14.95vh;
+    left: 47%;
+}
+#thirdslidearrow{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 20px solid gainsboro;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid transparent;
+    top: -14.95vh;
+    left: 47%;
+}
+#fourthslidearrow{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 20px solid gainsboro;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid transparent;
+    top: -14.95vh;
+    left: 47%;
+}
+cite p{
+    color: blue;
+}
+#slidecounter{ 
+    height: 10px;
+}
+#slidecounterindicator{
+    width: 70px;
+    height: 10px;
+    margin: auto;
+}
+.slidecounterbullets{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    float: left;
+    margin: 15px 5px 5px 5px;
+}
+#ratingdiv{
+    height: 205px;
+    clear: both;
+    margin-top: 30px;
+    padding: 0px 70px 0px 70px;
+    text-align: center;
+    overflow: hidden;
+}
+.ratingbox{
+    float: left;
+    width: 28%;
+    text-align: left;
+    margin: 20px 30px 0px 0px ;
+}
+#excellent{
+    margin-right: 80px;
+}
+#ourservicessection{
+    width: 100%;
+    height: 100%;
+    border-top: 1px dotted black;
+    text-align: center;
+}
+#ourservicessection h1{
+    font-size: 45px;
+}
+#servicesectionwrap{
+    padding: 100px 100px 100px 100px;
+    height: 100%;
+}
+#servicesectionwrap a{
+    text-decoration: none;
+    color: white;
+}
+.learnmorelinkcover{
+    width: 150px;
+    margin: auto;
+}
+.learnmorebluelink{
+    background-color: blue;
+    width: 150px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.learnmorebluelink:hover{
+    background-color: lightblue;
+}
+#servicedivcover{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+.servicediv{
+    width: 50%;
+    margin: 2%;
+}
+#floatleftdiv{
+    position: relative;
+}
+@keyframes floatleftscroll{
+    from{transform: translate(-700px, 0px);}
+    to{transform: translate(0px, 0px);}
+}
+#floatrightdiv{
+    position: relative;
+    left: 0%;
+}
+@keyframes floatrightscroll{
+    from{transform: translate(900px, 0px);}
+    to{transform: translate((0%, 0px));}
+}
+.servicediv h2{
+    font-size: 30px;
+    color: blue;
+}
+.servicediv p{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+}
+.leftdivcontents{
+    margin-bottom: 70px;
+}
+.rightdivcontents{
+    margin-bottom: 70px;
+}
+#meettheteamsection{
+    clear: both;
+    background-color: gainsboro;  
+    text-align: center;
+}
+#meettheteamcover{
+    padding: 100px;
+}
+#meettheteamheadercover h1{
+    font-size: 45px;
+    margin-bottom: 60px;
+}
+#teamdivcontainer1{
+    display: flex;
+}
+#teamdivcontainer2{
+    display: flex;
+}
+@keyframes firstteamdivup{
+    from{transform: translate(0px, 400px);}
+    to{transform: translate(0px, 0px);}
+}
+.teamdivs{
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    width: 25%;
+    text-align: center;
+}
+.teamdivs img{
+    border-radius: 50%;
+    width: 100%;
+}
+#scrolllogobarcontainer{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    overflow: hidden;
+}
+#scrolllogobar{
+    position: relative;
+    width: 200%;
+    height: 90px;
+    display: flex;
+    animation-name: scrolllogo;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+#scrolllogobar img{
+    width: 20%;
+}
+.scrolllogodiv{
+    display: flex;
+    margin: 0px 10px 0 0;
+}
+@keyframes scrolllogo{
+    0%{transform: translate(0px, 0px);}
+    49%{transform: translate(0px, 0px);}
+    50%{transform: translate(-50%, 0px);}
+    100%{transform: translate(-50%, 0px);}
+}
+#ourblogsection{
+    text-align: center;
+}
+#ourblogsectioncover{
+    padding: 100px;
+}
+#ourblogsectioncover h1{
+ font-size: 45px;
+}
+#ourblogdivcontainer{
+    display: flex;
+}
+.ourblogdivs{
+    margin: 10px;
+    width: 32%;
+    text-align: left;
+}
+.ourblogdivs p{
+    line-height: 30px;
+}
+.ourblogdivs a{
+    text-decoration: none;
+    color: blue;
+}
+#lastsection{
+    text-align: center;
+    background-image: url("460057.jpg");
+}
+#lastsectionlayer{
+    background-color: rgba(0,0,0, 0.7);
+}
+
+#lastsectionwrap{
+    padding: 100px;
+    color: white;
+}
+#lastsectionwrap h1{
+    font-size: 50px;
+}
+#lastsectionwrap h2{
+    font-size: 45px;
+}
+footer{
+    background-color: rgba(0,0,0, 0.9);
+    padding: 10px;
+}
+#footernav ul li{
+    display: inline;
+    margin: 5px;
+} 
+#footernav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#footernav ul li a:hover{
+    color: grey;
+}
+#footercopyright{
+    color: white;
+}
+#contacticons{
+    position: relative;
+    top: -10px;
+    left: 80%;
+    display: flex;
+    color: white;
+}
+.icons{
+    border: 1px solid white;
+    width: 10px;
+    height: 15px;
+    margin: 10px;
+}
+@media(max-width: 1100px){
+    nav{
+        display: none;
+    }
+    #shrinkedmenu{
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    #shrinkedmenu ul{
+        padding: 120px;
+        margin: 0;
+        text-align: center;
+    }
+    #shrinkedmenu ul li{
+        font-size: 19px;
+        list-style-type: none;
+        margin-bottom: 27px; 
+    }
+    #shrinkedmenu ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    #shrinkedmenucancel{
+        position: relative;
+        color: white;
+        font-size: 35px;
+        margin-top: 10px;
+        left: 90%;
+    }
+    #shrinkedmenu li a:hover{
+        color: grey;
+    }
+    #shrinkedmenucancel:hover{
+        color: grey;
+        cursor: pointer;
+    }
+    #menushrinked{
+        width: 5px;
+        height: 5px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        float: right;
+        margin: 30px 50px 20px 20px;
+    }
+    #menushrinked:hover{
+        border-color: blue;
+    }
+}
+@media(max-width: 768px){
+    .bodysection h1{
+        font-size: 25px;
+    }
+    #main{
+        text-align: center;
+    }
+    #mainwrapper{
+        padding: 50px;
+    }
+    #main p{
+        font-size: 17px;
+        line-height: 2;
+    }
+    /* new*/
+    #insidersadvantagecover{
+        padding: 50px;
+    }
+    #advantageboxeswrap{
+        display: block;
+    }
+    .advantageboxes{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 200px;
+        font-size: 25px;
+    }
+    .advantageboxes p{
+        margin-top: 0px;
+        font-size: 5px;
+    }
+    /* new*/
+    #resultsthatspeakforthemselves{
+        border-top: 1px dotted black;
+    }
+    #resultsthatspeakforthemselves h1{
+        font-size: 25px;
+    }
+    #resultsectionwrapper{
+        padding: 50px;
+        text-align: center;
+    }
+    .resultboxes{
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+    .resultboxes h1{
+        font-size: 45px;
+        color: blue;
+    }
+    .resultboxes p{
+        font-size: 15px;
+    }
+    .slidespandiv{
+        background-color: gainsboro;
+        line-height: 1.5;
+        font-size: 12px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .ratingbox{
+        float: none;
+        width: 100%;
+        text-align: left;
+        margin: auto;
+        font-size: 14px;
+    }
+    #excellent{
+        text-align: center;
+    }
+    /*new*/
+    #servicedivcover{
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    .servicediv{
+        width: 100%;
+        margin: auto;
+    }
+    #ourservicessection h1{
+        font-size: 25px;
+    }
+    #servicesectionwrap{
+        padding: 50px;
+        height: 100%;
+    }
+    .servicediv h2{
+        font-size: 25px;
+        color: blue;
+    }
+    .servicediv p{
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: left;
+    }
+    /*new*/
+    #teamdiv3, #teamdiv4{
+        display: none;
+    }
+    .teamdivs{
+        background-color: white;
+        margin: 10px;
+        padding: 5px;
+        width: 50%;
+        text-align: center;
+    }
+    #scrolllogobar{
+        position: relative;
+        width: 360%;
+        height: 90px;
+        display: flex;
+        animation-name: scrolllogo;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+    }
+    @keyframes scrolllogo{
+        0%{transform: translate(0px, 0px);}
+        25%{transform: translate(0px, 0px);}
+        26%{transform: translate(-30%, 0px);}
+        50%{transform: translate(-30%, 0px);}
+        51%{transform: translate(-50%, 0px);}
+        75%{transform: translate(-50%, 0px);}
+        76%{transform: translate(-80%, 0px);}
+        100%{transform: translate(-80%, 0px);}
+    }
+    /*new*/
+    #ourblogsectioncover{
+        padding: 50px;
+    }
+    #ourblogsectioncover h1{
+     font-size: 45px;
+    }
+    #ourblogdivcontainer{
+        display: block;
+    }
+    .ourblogdivs{
+        margin: 10px;
+        margin-bottom: 50px;
+        width: 100%;
+        text-align: left;
+    }
+    .ourblogdivs p{
+        line-height: 30px;
+    }
+    /* new*/
+    #lastsectionwrap{
+        padding: 100px;
+        color: white;
+    }
+    #lastsectionwrap h1{
+        font-size: 35px;
+    }
+    #lastsectionwrap h2{
+        font-size: 29px;
+    }
+    /* new */
+    #contacticons{
+        position: relative;
+        margin: 20px;
+        top: 0px;
+        left: 35%;
+        display: flex;
+        color: white;
+    }
+    .icons{
+        border: 1px solid white;
+        width: 10px;
+        height: 15px;
+        margin: 0 20px 0 20px;
+    }
+}
