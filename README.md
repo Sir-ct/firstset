@@ -1,0 +1,1 @@
+I uploaded two projects at once, jspagepract was actually my first project, i decided to take a big leap and did the second project "medschoolpract" which is still not completely finished.. please drop your reviews and corrections.. thank you
