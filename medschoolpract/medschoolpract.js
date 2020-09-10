@@ -69,10 +69,6 @@ function leaveotherservicessubmenu(){
     otherservices.style="default";
 }
 function showmenushrinked(){
-    if(window.innerWidth > 1000){
-        smallmenu.style = "display: none;";
-    }
-
     smallmenu = document.getElementById("shrinkedmenu");
     smallmenu.style = "display: block; top: 0px;";
     shrinkedmenu = document.getElementById("shrinkedmenu");
@@ -81,5 +77,8 @@ function showmenushrinked(){
 }
 function cancelshrinkedmenu(){
     smallmenu.style = "default";
-
 }
+function main(){
+    
+}
+window.addEventListener('load', main);
